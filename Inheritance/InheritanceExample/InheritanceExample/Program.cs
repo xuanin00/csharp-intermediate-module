@@ -26,7 +26,11 @@ namespace InheritanceExample
 
             XMLWriter newWriter = writer as XMLWriter; //this is ok now because writer was xml
             newWriter.FormatXMLFile();
-            
+            newWriter.CalculateFileSize();
+
+            XMLWriter2 newWriter2 = new XMLWriter2("any name 2"); //this is ok now because writer was xml
+            newWriter2.CalculateFileSize();
+
         }
     }
 }
