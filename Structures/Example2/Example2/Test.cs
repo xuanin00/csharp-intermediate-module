@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Example2
 {
-    struct Test
+    class Test
     {
         public int Number { get; set; }
         public Test(int number)
