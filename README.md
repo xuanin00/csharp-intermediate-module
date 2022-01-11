@@ -1,2 +1,4 @@
 # csharp-intermediate-module
-This repository contains the lessons related to C# intermediate course on Code Maze
+## Delegates in C#
+
+##  https://code-maze.com/csharp-delegates/
