@@ -1,4 +1,4 @@
 # csharp-intermediate-module
-## Structures in C#
+## Delegates in C#
 
-##https://code-maze.com/csharp-structures
+##  https://code-maze.com/csharp-delegates/
