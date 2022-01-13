@@ -6,11 +6,31 @@ using System.Threading.Tasks;
 
 namespace AbstractionExamples
 {
-    public class AbstractExampleClass
+    public abstract class AbstractExampleClass
     {
-        public void PrintToConsole(string text)
+        public string Name { get; }
+        public string Description { get; set; }
+        public abstract void PrintToConsole();
+        public AbstractExampleClass(string name)
         {
-            Console.WriteLine(text);
+            Name = name;
+        }
+        public AbstractExampleClass(string name, string description)
+        {
+            Description = description;
+        }
+    }
+
+    public class AbstractExampleClass1:AbstractExampleClass
+    {
+        public AbstractExampleClass1(string message):base(message)
+        {
+            Description = this.GetType().Name;
+        }
+        public override void PrintToConsole()
+        {
+            Console.WriteLine(Name);
+            Console.WriteLine(Description);
         }
     }
 
@@ -18,7 +38,9 @@ namespace AbstractionExamples
     {
         static void Main(string[] args)
         {
-            AbstractExampleClass example = new AbstractExampleClass();
+            AbstractExampleClass1 example = new AbstractExampleClass1("name");
+
+            example.PrintToConsole();
         }
     }
 }
