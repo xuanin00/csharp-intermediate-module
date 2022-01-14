@@ -40,7 +40,7 @@ namespace HashtableExamples
 
             foreach (var key in hashTable1.Keys)
             {
-                Console.WriteLine($"Key: {key}, value: {hashTable[key]}");
+                Console.WriteLine($"Key: {key}, value: {hashTable1[key]}");
             }
             Console.WriteLine();
 
