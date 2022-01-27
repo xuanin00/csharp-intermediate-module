@@ -49,6 +49,12 @@ namespace ListExamples
 
             numbers.Remove(69);
 
+            foreach (int number in numbers)
+            {
+                Console.WriteLine(number);
+            }
+            Console.WriteLine();
+
             numbers.Clear();
 
             Console.WriteLine(numbers.Count);
